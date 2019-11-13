@@ -1,5 +1,39 @@
 @import '../node_modules/mdbreact/dist/css/mdb.css';
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
 
+
+.contact-form {
+
+background-color: rgba(179, 57, 190, 0.096);
+}
+//skill 
+.progress-bar {
+ 
+  background-color: #a344c9;
+}
+.progress-bar {
+  width: 0;
+  animation: progress 1.5s ease-in-out forwards;
+
+} 
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.md-form label {
+  color: #ffffff !important;
+}
 
 //scroll bar
 /* width */
@@ -72,18 +106,26 @@ border-radius: 10px;
   margin-top: -6%;
 }
 
-h3 {
+h2 {
   font-family: "Roboto Slab", "Times New Roman", serif;
 }
 
 
-h6 {
+h5 {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-@media (max-width:768px){
+@media (min-width: 576px) { 
+  .main > img {
+    width : 23vw;
+    transform: translate3d(0, -50%, 0);
+    box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+ }
+}
+
+@media (min-width: 768px){
   // code for device screen between 768 and 1200px
   .main > img {
     width : 23vw;
@@ -92,7 +134,7 @@ h6 {
   }
 }
 
-@media (min-width:1199px){
+@media (min-width:1200px){
   .main >  img {
     width : 14vw;
     transform: translate3d(0, -50%, 0);
@@ -163,16 +205,14 @@ body {
   height : 600px;
   background-color : transparent;
   height : auto;
-  margin : auto;
 }
 
 .works > h1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 10vw;
+  font-family: 'Patua One', cursive;
+  font-size: 8vw;
   background: -webkit-linear-gradient(40deg, #ff6ec4, #7873f5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin : 10px;
 }
 
 .works-contents {
