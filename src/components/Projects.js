@@ -9,8 +9,8 @@ import thumb3 from '../images/solflix_thumb.PNG'
 
 export default function Projects() {
   return (
-    <div className="d-flex justify-content-end">
-      <div className="works mx-4 px-2">
+    <div className="d-flex justify-content-end" id="projects">
+      <div className="works mx-4 px-2" >
         <h1>Projects</h1>
       </div>
       <div className="works-contents">

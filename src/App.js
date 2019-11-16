@@ -11,9 +11,6 @@ import profile from './images/avatar (2).jpg'
 // import AnimatedProgressProvider from "./AnimatedProgressProvider";
 // import { easeQuadInOut } from "d3-ease";
 import 'react-circular-progressbar/dist/styles.css';
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import Projects from './components/Projects';
@@ -30,7 +27,7 @@ function App() {
         <Navi />
 
         <header>
-          <div className="header py-5">
+          <div className="header py-5" id="home">
             <div className="headertext">
               <Typist className="TypistExample-header">
                 <span className="purple-gradient"> Hello , I'm Hansol </span>
@@ -42,16 +39,16 @@ function App() {
           </div>
         </header>
         <section>
-          <div className="main text-center">
+          <div className="main text-center" id="about">
             <Image src={profile} roundedCircle fluid />
             <div className="main-contents">
               <h2>Hansol Park</h2>
               <h5>Web Developer</h5>
               <h6>sori9088@naver.com</h6>
               <div>
-                <FontAwesomeIcon icon={faGithub} size={'2x'} className="mx-2" href="https://github.com/sori9088" />
-                <FontAwesomeIcon icon={faLinkedin} size={'2x'} className="mx-2" />
-                <FontAwesomeIcon icon={faFacebook} size={'2x'} className="mx-2" />
+                <a href='https://github.com/sori9088'><FontAwesomeIcon icon={faGithub} size={'2x'} className="mx-2" /></a>
+                <a href='www.linkedin.com/in/hansol-park-39b143177'><FontAwesomeIcon icon={faLinkedin} size={'2x'} className="mx-2" /></a>
+                <a href='https://www.facebook.com/profile.php?id=100002561409102'><FontAwesomeIcon icon={faFacebook} size={'2x'} className="mx-2" /></a>
               </div>
               <div className="skill-contents my-5">
                 <h1>Skill</h1>
@@ -77,8 +74,10 @@ function App() {
         </section>
         <body>
           <Projects />
-          <Contact />
         </body>
+        <footer>
+        <Contact />
+        </footer>
         <Footer />
 
       </div>

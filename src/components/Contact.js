@@ -3,14 +3,14 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreac
 
 const FormPage = () => {
   return (
-    <div className="py-5">
-    <MDBContainer>
+    <div className="py-5" id="contacts">
+    <MDBContainer >
       <MDBRow>
       <MDBCol>
       </MDBCol>
         <MDBCol md="6" className="contact-form">
           <form>
-            <h2 style={{color:'white'}} className="h3 text-center my-4">I'm ready to go ! </h2>
+            <h2 style={{color:'white'}} className="h3 text-center my-4">Contact Me :) </h2>
             <div className="grey-text">
               <MDBInput
                 label="Your name"
