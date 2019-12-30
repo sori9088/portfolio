@@ -41,7 +41,7 @@ function App() {
         <section>
           <div className="main text-center" id="about">
             <Image src={profile} roundedCircle fluid />
-            <div className="main-contents">
+            <div className="main-contents col-md-12">
               <h2>Hansol Park</h2>
               <h5>Web Developer</h5>
               <h6>sori9088@naver.com</h6>
