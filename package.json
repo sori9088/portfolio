@@ -11,7 +11,7 @@
     "d3-ease": "^1.0.5",
     "mailgun-js": "^0.22.0",
     "mdbreact": "^4.22.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-circular-progressbar": "^2.0.3",
